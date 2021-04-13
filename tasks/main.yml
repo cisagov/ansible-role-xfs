@@ -1,5 +1,5 @@
 ---
 # tasks file for xfs
 - name: Install xfsprogs
-  package:
+  ansible.builtin.package:
     name: xfsprogs
