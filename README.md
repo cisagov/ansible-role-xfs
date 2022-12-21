@@ -1,8 +1,7 @@
 # ansible-role-xfs #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-xfs/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-xfs/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-xfs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-xfs/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-xfs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-xfs/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-xfs/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-xfs/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing prerequisites for working with XFS file
 systems.
@@ -34,8 +33,10 @@ Here's how to use it in a playbook:
 - hosts: all
   become: yes
   become_method: sudo
-  roles:
-    - xfs
+  tasks:
+    - name: Install prerequisites for working with XFS file systems
+      ansible.builtin.include_role:
+        name: xfs
 ```
 
 ## Contributing ##
