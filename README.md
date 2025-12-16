@@ -1,6 +1,7 @@
 # ansible-role-xfs #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-xfs/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-xfs/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-xfs)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-xfs/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-xfs/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing prerequisites for working with XFS file
